@@ -9,7 +9,7 @@ const PostDetail = () => {
         .then(res => res.json())
         .then(data => setPost(data))
         .catch(error => console.log(error))
-    } , [])
+    } , [id])
     return (
         <div>
             <h1>This is postDetail component : {id}</h1>
